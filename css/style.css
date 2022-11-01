@@ -1,0 +1,115 @@
+/* RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    /* FONTS */
+
+
+    /* COLORS */
+    --PRIMARY-COLOR: #843253;
+    --BODY-BGCOLOR: #FFF;
+    --HOVER: #dc91af;
+    
+
+    /* BORDERS */
+    --BORDERS: 2px solid var(--PRIMARY-COLOR);
+    --BORDER-RADIUS: 10px;
+}
+
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--PRIMARY-COLOR);
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1100px;
+    background-color: var(--BODY-BGCOLOR);
+    margin: 0 auto;
+}
+
+.center {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+}
+
+.start-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.start-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+}
+
+a {
+    color: var(--PRIMARY-COLOR);
+    text-decoration: none;
+    border: var(--BORDERS);
+    border-radius: var(--BORDER-RADIUS);
+}
+
+a:hover {
+    background-color: var(--HOVER);
+    color: var(--BODY-BGCOLOR);
+}
+
+a:active {
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--BODY-BGCOLOR);
+}
+
+.login {
+    border: var(--BORDERS);
+    border-radius: var(--BORDER-RADIUS);
+    height: 300px;
+    width: 400px;
+    padding: 50px;
+}
+
+.nav_ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.login_header {
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--BODY-BGCOLOR);
+    padding: 5px;
+    margin-top: -15px;
+}
+
+#signin_button {
+    padding: 5px 73px 5px 73px;
+    border-radius: 5px;
+}
+
+label {
+    color: var(--PRIMARY-COLOR);
+}
+
+input {
+    border: var(--BORDERS);
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+}
