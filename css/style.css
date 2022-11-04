@@ -25,11 +25,11 @@
     --BORDER-RADIUS: 5px;
 
     /* STANARD MARGIN */
-    --MARGIN-NAV: 0 35.5px 0 35.5px;
+    --MARGIN-NAV: 0 30px 0 30px;
 
     /* NAVIGATION */
-    --NAV-WIDTH: 173px;
-    --NAV-HEIGHT: 30px;
+    --NAV-WIDTH: 207px;
+    --NAV-HEIGHT: 50px;
 
 }
 
@@ -47,7 +47,6 @@ body {
     margin: 0 auto;
     
 }
-
 
 a {
     color: var(--PRIMARY-COLOR);
@@ -79,10 +78,9 @@ a:active {
 
 /* INDEX PAGE */
 
-.start_menu {
+.start_menu_container {
     display: flex;
-    gap: 2rem;
-    
+    gap: 3rem;
 }
 
 .start_menu_item {
@@ -95,27 +93,29 @@ a:active {
     border-radius: var(--BORDER-RADIUS);
 }
 
+.container_link {
+    border-radius: var(--BORDER-RADIUS);
+}
+
 /* LOG IN PAGE */
 
-.login {
+.login_container {
     border: var(--BORDERS);
     border-radius: var(--BORDER-RADIUS);
     height: 300px;
     width: 400px;
-    padding: 35px;
 }
 
 .login_header {
     background-color: var(--PRIMARY-COLOR);
     color: var(--BODY-BGCOLOR);
     padding: 5px;
-    margin-top: -15px;
 }
 
 #signin_button {
     border: var(--BORDERS);
     padding: 5px 72.5px 5px 72.5px;
-    border-radius: 5px;
+    border-radius: var(--BORDER-RADIUS);
 }
 
 #signin_access:hover {
@@ -137,10 +137,10 @@ input {
 
 /* STUDENT PAGE */
 
-.nav_menu {
+.nav_container {
     display: flex;
     gap: 0;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     top: 25px;
@@ -149,11 +149,7 @@ input {
     margin: var(--MARGIN-NAV);
 }
 
-.nav_menu > a {
-    border: none;
-}
 .nav_item {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,3 +158,10 @@ input {
 }
 
 
+
+.advised_courses {
+    border: var(--BORDERS);
+    border-radius: var(--BORDER-RADIUS);
+    height: 500px;
+    width: 300px;
+}
