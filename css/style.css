@@ -48,12 +48,10 @@ body {
     
 }
 
+
 a {
     color: var(--PRIMARY-COLOR);
     text-decoration: none;
-    border: var(--BORDERS);
-    border-radius: var(--BORDER-RADIUS);
-    padding: 1rem;
 }
 
 a:hover {
@@ -75,23 +73,26 @@ a:active {
     position: absolute;
 }
 
-.center_hz{
-
+.center_hz {
+    text-align: center;
 }
 
 /* INDEX PAGE */
 
-.start-menu {
+.start_menu {
     display: flex;
     gap: 2rem;
+    
 }
 
-.start-menu-item {
+.start_menu_item {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
     width: 150px;
+    border: var(--BORDERS);
+    border-radius: var(--BORDER-RADIUS);
 }
 
 /* LOG IN PAGE */
@@ -101,7 +102,7 @@ a:active {
     border-radius: var(--BORDER-RADIUS);
     height: 300px;
     width: 400px;
-    padding: 50px;
+    padding: 35px;
 }
 
 .login_header {
@@ -112,8 +113,14 @@ a:active {
 }
 
 #signin_button {
-    padding: 5px 73px 5px 73px;
+    border: var(--BORDERS);
+    padding: 5px 72.5px 5px 72.5px;
     border-radius: 5px;
+}
+
+#signin_access:hover {
+    background-color: var(--BODY-BGCOR);
+    color: var(--HOVER);
 }
 
 label {
